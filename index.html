@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bánh B?t L?c Chay</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f8fefe;
+}
+
+.container {
+  padding: 15px;
+}
+
+h1, h2 {
+  color: #2ccad3;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  text-align: center;
+  background: #ff5722;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.btn.secondary {
+  background: #2ccad3;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.sticky {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+}
+
+.sticky a {
+  flex: 1;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.zalo {
+  background: #2ccad3;
+}
+
+.call {
+  background: #ff5722;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- HERO -->
+<h1>?? BÁNH B?T L?C CHAY</h1>
+<p><b>Bánh s?ng giá s? ch? 3.000d/cái</b></p>
+<p>?? Nh?n t? 100 cái – Giao t?n noi</p>
+
+<a class="btn" href="#order">Ð?T HÀNG NGAY</a>
+<a class="btn secondary" href="#">AN BÁNH CHÍN T?I QUÁN</a>
+
+<!-- GIÁ -->
+<div class="card">
+<h2>?? Giá s?</h2>
+<p>100+ cái: <b>3.000d/cái</b></p>
+<p>300+ cái: inbox giá t?t hon</p>
+</div>
+
+<!-- QUY TRÌNH -->
+<div class="card">
+<h2>?? Cách d?t hàng</h2>
+<p>1. Chuy?n kho?n</p>
+<p>2. Ch?p màn hình</p>
+<p>3. G?i Zalo</p>
+
+<p><b>Ngân hàng:</b> XXX</p>
+<p><b>STK:</b> XXX</p>
+<p><b>Tên:</b> XXX</p>
+</div>
+
+<!-- FORM -->
+<div class="card" id="order">
+<h2>?? Ð?t hàng nhanh</h2>
+
+<input type="text" id="name" placeholder="H? tên">
+<input type="text" id="phone" placeholder="S? di?n tho?i">
+<input type="text" id="address" placeholder="Ð?a ch?">
+<input type="number" id="quantity" placeholder="S? lu?ng">
+
+<button class="btn" onclick="orderNow()">Ð?T HÀNG</button>
+</div>
+
+<!-- CAM K?T -->
+<div class="card">
+<h2>? Cam k?t</h2>
+<p>? Bánh m?i m?i ngày</p>
+<p>? Giao dúng s? lu?ng</p>
+<p>? Hoàn ti?n n?u l?i</p>
+</div>
+
+</div>
+
+<!-- STICKY BUTTON -->
+<div class="sticky">
+<a class="zalo" href="https://zalo.me/xxxxxxxx">ZALO</a>
+<a class="call" href="tel:xxxxxxxx">G?I</a>
+</div>
+
+<script>
+function orderNow() {
+  var name = document.getElementById("name").value;
+  var phone = document.getElementById("phone").value;
+  var address = document.getElementById("address").value;
+  var quantity = document.getElementById("quantity").value;
+
+  var message = "Ð?t bánh:\n"
+    + "Tên: " + name + "\n"
+    + "SÐT: " + phone + "\n"
+    + "Ð?a ch?: " + address + "\n"
+    + "S? lu?ng: " + quantity;
+var zaloLink = "https://zalo.me/xxxxxxxx?text=" + encodeURIComponent(message);
+
+  alert("Vui lòng chuy?n kho?n và g?i Zalo d? xác nh?n don!");
+  window.open(zaloLink, "_blank");
+}
+</script>
+
+</body>
+</html>
