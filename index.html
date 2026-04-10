@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>B�nh B?t L?c Chay</title>
+<title>Bánh Bột Lọc Chay</title>
 
 <style>
 body {
@@ -84,50 +84,50 @@ input {
 <div class="container">
 
 <!-- HERO -->
-<h1>?? B�NH B?T L?C CHAY</h1>
-<p><b>B�nh s?ng gi� s? ch? 3.000d/c�i</b></p>
-<p>?? Nh?n t? 100 c�i � Giao t?n noi</p>
+<h1>🥟 BÁNH BỘT LỌC CHAY</h1>
+<p><b>Bánh sống giá sỉ chỉ 3.000đ/cái</b></p>
+<p>🔥 Nhận từ 100 cái – Giao tận nơi</p>
 
-<a class="btn" href="#order">�?T H�NG NGAY</a>
-<a class="btn secondary" href="#">AN B�NH CH�N T?I QU�N</a>
+<a class="btn" href="#order">ĐẶT HÀNG NGAY</a>
+<a class="btn secondary" href="#">ĂN BÁNH CHÍN TẠI QUÁN</a>
 
-<!-- GI� -->
+<!-- GIÁ -->
 <div class="card">
-<h2>?? Gi� s?</h2>
-<p>100+ c�i: <b>3.000d/c�i</b></p>
-<p>300+ c�i: inbox gi� t?t hon</p>
+<h2>💰 Giá sỉ</h2>
+<p>100+ cái: <b>3.000đ/cái</b></p>
+<p>300+ cái: inbox giá tốt hơn</p>
 </div>
 
-<!-- QUY TR�NH -->
+<!-- QUY TRÌNH -->
 <div class="card">
-<h2>?? C�ch d?t h�ng</h2>
-<p>1. Chuy?n kho?n</p>
-<p>2. Ch?p m�n h�nh</p>
-<p>3. G?i Zalo</p>
+<h2>📲 Cách đặt hàng</h2>
+<p>1. Chuyển khoản</p>
+<p>2. Chụp màn hình</p>
+<p>3. Gửi Zalo</p>
 
-<p><b>Ng�n h�ng:</b> XXX</p>
+<p><b>Ngân hàng:</b> XXX</p>
 <p><b>STK:</b> XXX</p>
-<p><b>T�n:</b> XXX</p>
+<p><b>Tên:</b> XXX</p>
 </div>
 
 <!-- FORM -->
 <div class="card" id="order">
-<h2>?? �?t h�ng nhanh</h2>
+<h2>🛒 Đặt hàng nhanh</h2>
 
-<input type="text" id="name" placeholder="H? t�n">
-<input type="text" id="phone" placeholder="S? di?n tho?i">
-<input type="text" id="address" placeholder="�?a ch?">
-<input type="number" id="quantity" placeholder="S? lu?ng">
+<input type="text" id="name" placeholder="Họ tên">
+<input type="text" id="phone" placeholder="Số điện thoại">
+<input type="text" id="address" placeholder="Địa chỉ">
+<input type="number" id="quantity" placeholder="Số lượng">
 
-<button class="btn" onclick="orderNow()">�?T H�NG</button>
+<button class="btn" onclick="orderNow()">ĐẶT HÀNG</button>
 </div>
 
-<!-- CAM K?T -->
+<!-- CAM KẾT -->
 <div class="card">
-<h2>? Cam k?t</h2>
-<p>? B�nh m?i m?i ng�y</p>
-<p>? Giao d�ng s? lu?ng</p>
-<p>? Ho�n ti?n n?u l?i</p>
+<h2>✅ Cam kết</h2>
+<p>✔ Bánh mới mỗi ngày</p>
+<p>✔ Giao đúng số lượng</p>
+<p>✔ Hoàn tiền nếu lỗi</p>
 </div>
 
 </div>
@@ -135,7 +135,7 @@ input {
 <!-- STICKY BUTTON -->
 <div class="sticky">
 <a class="zalo" href="https://zalo.me/xxxxxxxx">ZALO</a>
-<a class="call" href="tel:xxxxxxxx">G?I</a>
+<a class="call" href="tel:xxxxxxxx">GỌI</a>
 </div>
 
 <script>
@@ -145,14 +145,14 @@ function orderNow() {
   var address = document.getElementById("address").value;
   var quantity = document.getElementById("quantity").value;
 
-  var message = "�?t b�nh:\n"
-    + "T�n: " + name + "\n"
-    + "S�T: " + phone + "\n"
-    + "�?a ch?: " + address + "\n"
-    + "S? lu?ng: " + quantity;
+  var message = "Đặt bánh:\n"
+    + "Tên: " + name + "\n"
+    + "SĐT: " + phone + "\n"
+    + "Địa chỉ: " + address + "\n"
+    + "Số lượng: " + quantity;
 var zaloLink = "https://zalo.me/xxxxxxxx?text=" + encodeURIComponent(message);
 
-  alert("Vui l�ng chuy?n kho?n v� g?i Zalo d? x�c nh?n don!");
+  alert("Vui lòng chuyển khoản và gửi Zalo để xác nhận đơn!");
   window.open(zaloLink, "_blank");
 }
 </script>
